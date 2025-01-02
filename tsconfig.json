@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES2021", // Target modern JavaScript for Node.js
+    "module": "ESNext", // Use ES module syntax
+    "moduleResolution": "node", // Resolve modules in Node.js style
+    "lib": ["ES2021"], // Include modern ECMAScript features
+    "allowJs": false, // Disallow JavaScript files
+    "checkJs": false, // Do not type-check JavaScript files
+    "declaration": true, // Generate `.d.ts` files for TypeScript definitions
+    "declarationMap": true, // Create source maps for declarations
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./src", // Root directory of the source files
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enable ES module interop for CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files for faster builds
+    "resolveJsonModule": true, // Allow importing JSON files
+
+    /* Advanced Options */
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "noEmitOnError": true, // Prevent emitting output if there are type errors
+    "useUnknownInCatchVariables": true, // Enforces using `unknown` in catch variables
+
+    /* Type Checking Options */
+    "noImplicitAny": true, // Warn on variables with `any` type
+    "strictNullChecks": true, // Enforce strict null checks
+    "strictFunctionTypes": true, // Check function parameter and return types strictly
+    "strictBindCallApply": true, // Check type safety in bind, call, and apply methods
+    "noImplicitReturns": true, // Warn if some code paths do not return a value
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough in `switch` statements
+
+    /* Node.js Specific */
+    "allowSyntheticDefaultImports": true, // Allow default imports for compatibility with CommonJS
+    "types": ["node"], // Include Node.js type definitions
+
+    /* Source Map Options */
+    "sourceMap": true, // Enable source maps for debugging
+    "inlineSources": true // Include source code in source maps
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "tests/**"], // Exclude `node_modules`, `dist`, and test files
+  "ts-node": {
+    "swc": true // Use SWC for faster TypeScript transpilation in `ts-node`
+  }
+}
